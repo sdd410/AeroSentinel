@@ -1,0 +1,11 @@
+{
+  "name": "aerosentinel-swarm-simulator",
+  "version": "1.0.0",
+  "description": "Autonomous Drone Swarm Surveillance Simulator",
+  "scripts": {
+    "start": "./start.sh",
+    "stop": "./stop.sh",
+    "test:backend": "cd backend && ./venv/bin/pytest",
+    "build:frontend": "cd frontend && npm run build"
+  }
+}

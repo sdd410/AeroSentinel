@@ -1,0 +1,166 @@
+# ==============================================================================
+# AeroSentinel - Root .gitignore
+# Multi-tier Ignore Rules for Python (Backend), Node/TypeScript/React (Frontend),
+# Environments, System Files, and Developer Tooling
+# ==============================================================================
+
+# ------------------------------------------------------------------------------
+# Python & Backend
+# ------------------------------------------------------------------------------
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# C extensions & build distribution
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# Virtual Environments
+venv/
+.venv/
+env/
+ENV/
+backend/venv/
+*.venv/
+env.bak/
+venv.bak/
+
+# Unit Test & Coverage Caches
+.pytest_cache/
+.coverage
+.coverage.*
+nosetests.xml
+coverage.xml
+htmlcov/
+.hypothesis/
+.tox/
+.nox/
+
+# Type Checking & Linters
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.ruff_cache/
+
+# Jupyter / IPython
+.ipynb_checkpoints
+
+# ------------------------------------------------------------------------------
+# Node.js & Frontend (React / TypeScript / Vite)
+# ------------------------------------------------------------------------------
+# Dependencies
+node_modules/
+frontend/node_modules/
+.pnp
+.pnp.js
+
+# Build Outputs
+dist/
+dist-ssr/
+frontend/dist/
+frontend/dist-ssr/
+out/
+
+# Vite / Bundler / Linter caches
+.vite/
+.eslintcache
+.cache/
+*.tsbuildinfo
+
+# Node Debug Logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# ------------------------------------------------------------------------------
+# Environment Variables & Credentials
+# ------------------------------------------------------------------------------
+.env
+.env.*
+!.env.example
+!.env.template
+*.local
+
+# ------------------------------------------------------------------------------
+# Operating System & Filesystem Artifacts
+# ------------------------------------------------------------------------------
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+# Windows
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Linux
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+
+# ------------------------------------------------------------------------------
+# IDEs & Code Editors
+# ------------------------------------------------------------------------------
+# Visual Studio Code
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+*.code-workspace
+
+# JetBrains (PyCharm, WebStorm, etc.)
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Vim & Emacs
+*.swp
+*.swo
+*.swn
+\#*\#
+.#*
+
+# Sublime Text
+*.sublime-project
+*.sublime-workspace
+
+# ------------------------------------------------------------------------------
+# Runtime, Process IDs, and Project Specifics
+# ------------------------------------------------------------------------------
+/logs/
+backend/logs/
+frontend/logs/
+*.log
+*.pid
+*.seed
+*.pid.lock
+.temp/
+temp/
+tmp/
